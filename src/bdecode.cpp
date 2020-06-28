@@ -130,7 +130,7 @@ namespace aux {
 	{
 		for (int i = 0; i < len; ++i)
 		{
-			if (str[i] >= 32 && str[i] < 127)
+			if (str[i] != 0x27 && str[i] >= 32 && str[i] < 127)
 			{
 				ret += str[i];
 			}
